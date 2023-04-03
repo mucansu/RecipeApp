@@ -9,3 +9,5 @@ This might end up being a huge repository, but let's face that problem in due ti
 Since this is a private and free repository, I can't protect the main branch.
 
 But please, use a pull request and have someone review your code before you merge.
+
+**NOTE:** this README.md should be updated. Anyone up for the task?
