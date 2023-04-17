@@ -1,5 +1,5 @@
 ### Welcome to the Java API documentation
->This is where some documentation on how to get started wouls be nice>
+>This is where some documentation on how to get started would be nice
 
 ### Docker 
 
