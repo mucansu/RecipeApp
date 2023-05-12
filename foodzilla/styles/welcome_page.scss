@@ -1,0 +1,14 @@
+@use "global.scss" as g;
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid black;
+  .welcome-text {
+    padding: 0 2.5rem;
+    text-align: center;
+    line-height: 3rem;
+  }
+}

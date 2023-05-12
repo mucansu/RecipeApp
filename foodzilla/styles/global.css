@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Suez one";
+  src: url("../fonts/Suez_One/SuezOne-Regular.ttf");
+}
+body {
+  max-width: 450px;
+  max-height: 1000px;
+  background-color: #f2edd5;
+  font-family: "Suez one";
+}/*# sourceMappingURL=global.css.map */
