@@ -33,9 +33,9 @@ public class MySecurityConfig {
     http
             .csrf().disable()
             .cors().disable()
-            .authorizeRequests()
-            .antMatchers("/generate-token","/user/register").permitAll()
-            .antMatchers(HttpMethod.OPTIONS).permitAll()
+            .authorizeHttpRequests()
+            .requestMatchers("/generate-token","/user/register").permitAll()
+            .requestMatchers(HttpMethod.OPTIONS).permitAll()
             .anyRequest().authenticated()
             .and()
             .exceptionHandling().authenticationEntryPoint(unauthorizedHandler)

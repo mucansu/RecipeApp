@@ -6,9 +6,10 @@ import com.recipe.api.repository.RoleRepository;
 import com.recipe.api.repository.UserRepository;
 import com.recipe.api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
