@@ -15,6 +15,7 @@ export default function Home({ title, imgSrc }) {
         logo={"/foodzilla_logo.svg"}
         logoAlt={"Foodzilla logo"}
         btnImg={"/forward.svg"}
+        getStartedBtn={"/get-started.svg"}
       />
       <Footer />
     </>
