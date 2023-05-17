@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Suez one";
+  src: url("../fonts/Suez_One/SuezOne-Regular.ttf");
+}
+body {
+  max-width: 450px;
+  max-height: 1000px;
+  background-color: #f2edd5;
+  font-family: "Suez one";
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid black;
+}
+.welcome .welcome-text {
+  padding: 0 2.5rem;
+  text-align: center;
+  line-height: 3rem;
+}/*# sourceMappingURL=welcome_page.css.map */

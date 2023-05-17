@@ -1,0 +1,18 @@
+$bgColor: #f2edd5;
+$txtColor-black: #262614;
+$hbMenu-bgColor: #2a5931;
+$btnColor: #03318c;
+$bgColor-foodCards: #d9cdb8;
+$txtColor-white: #f0f2f2;
+
+@font-face {
+  font-family: "Suez one";
+  src: url("../fonts/Suez_One/SuezOne-Regular.ttf");
+}
+
+body {
+  max-width: 450px;
+  max-height: 1000px;
+  background-color: $bgColor;
+  font-family: "Suez one";
+}
