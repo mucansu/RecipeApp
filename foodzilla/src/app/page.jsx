@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useState } from "react";
-import WelcomePage from "../../components/welcome_page";
+import WelcomePage from "./welcome_page";
 import global from "../../styles/global.scss";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";

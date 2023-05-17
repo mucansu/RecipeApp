@@ -1,44 +1,32 @@
 "use client";
-import React from 'react';
-import { useRouter } from 'next/navigation';
-import Logo from '../../../components/welcome_page.jsx'; 
+import React from "react";
+import Logo from "../welcome_page.jsx";
+import Link from "next/link";
 
 export default function GetStartedPage() {
-const router = useRouter();
-
-const handleNewUserClick = () => {
-    // navigate to a new user registration page
-    router.push("/register");
-};
-
-const handleForgotPasswordClick = () => {
-    // navigate to a password reset page
-    router.push("/reset-password");
-};
-
-return (
+  return (
     <div>
-    <Logo logo="../foodzilla_logo.svg" logoAlt="../Foodzilla logo" />
-    
-    <h1>Get Started</h1>
+      <Logo logo="../foodzilla_logo.svg" logoAlt="../Foodzilla logo" />
 
-    <form>
+      <h1>Get Started</h1>
+
+      <form>
         <label>
-        Username:
-        <input type="text" name="username" />
+          Username:
+          <input type="text" name="username" />
         </label>
 
         <label>
-        Password:
-        <input type="password" name="password" />
+          Password:
+          <input type="password" name="password" />
         </label>
 
         <button type="submit">Log In</button>
-    </form>
+      </form>
 
-    <a href="#" onClick={handleNewUserClick}>New User</a>
-    <br />
-    <a href="#" onClick={handleForgotPasswordClick}>Forgot your password?</a>
+      <Link href="#">New User</Link>
+      <br />
+      <Link href="#">Forgot your password?</Link>
     </div>
-);
+  );
 }
