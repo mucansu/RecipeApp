@@ -24,7 +24,7 @@ export default function GetStartedPage() {
         <button type="submit">Log In</button>
       </form>
 
-      <Link href="#">New User</Link>
+      <Link href="../new-user">New User</Link>
       <br />
       <Link href="#">Forgot your password?</Link>
     </div>
