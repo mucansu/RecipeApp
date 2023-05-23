@@ -28,7 +28,7 @@ export default function LoginPage() {
         </form>
 
         <div className="link-container">
-          <Link className="new-user" href="#">
+          <Link className="new-user" href="../new-user">
             New User
           </Link>
           <Link className="forgot-pswrd" href="#">
@@ -37,6 +37,5 @@ export default function LoginPage() {
         </div>
       </div>
     </>
-
   );
 }
