@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import java.security.Principal;
 
 @RestController
-
+@CrossOrigin("*")
 public class AuthenticateController {
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -29,7 +29,7 @@ public class AuthenticateController {
 
 
     // generate token
-    @PostMapping("/generate-token")
+    @PostMapping("/login-user")
     public ResponseEntity<?> generateToken(@RequestBody JwtRequest jwtRequest) throws Exception {
         try {
             authenticate(jwtRequest.getUsername(),jwtRequest.getPassword());

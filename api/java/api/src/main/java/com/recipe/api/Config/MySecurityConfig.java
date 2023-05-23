@@ -34,7 +34,7 @@ public class MySecurityConfig {
             .csrf().disable()
             .cors().disable()
             .authorizeHttpRequests()
-            .requestMatchers("/generate-token","/user/register").permitAll()
+            .requestMatchers("/login-user","/user/register","/user/register-admin").permitAll()
             .requestMatchers(HttpMethod.OPTIONS).permitAll()
             .anyRequest().authenticated()
             .and()
@@ -51,49 +51,16 @@ public class MySecurityConfig {
 
 }
 
-/*@Override
-    protected void configure(HttpSecurity http) throws Exception {
-       http
-               .csrf()
-               .disable()
-               .cors()
-               .disable()
-               .authorizeRequests()
-               .antMatchers("/generate-token","/user/register").permitAll()
-               .antMatchers(HttpMethod.OPTIONS).permitAll()
-               .anyRequest().authenticated()
-                .and()
-                .exceptionHandling().authenticationEntryPoint(unauthorizedHandler)
-                .and()
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-        http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
-    }
 
- */
     @Bean
     public BCryptPasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
 
-
-  /*  @Override
-    @Bean
-    public AuthenticationManager authenticationManagerBean() throws Exception {
-        return super.authenticationManagerBean();
-    }
-     @Override
-   */
     @Bean
     public AuthenticationManager authenticationManagerBean(AuthenticationConfiguration configuration) throws Exception {
         return configuration.getAuthenticationManager();
     }
-
-/*    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(this.userDetailsServiceImpl).passwordEncoder(passwordEncoder());
-    }
-
- */
 
 @Bean
     public DaoAuthenticationProvider daoAuthenticationProvider(){
