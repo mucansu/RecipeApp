@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
+
 import Link from "next/link";
 import "../../../styles/login-page.scss";
 import Navbar from "../../../components/navbar";
 
-export default function GetStartedPage() {
+export default function LoginPage() {
   return (
     <>
       <Navbar />
@@ -36,5 +37,6 @@ export default function GetStartedPage() {
         </div>
       </div>
     </>
+
   );
 }

@@ -1,6 +1,8 @@
 "use client";
-import "../../../styles/welcome_page.scss";
-import "../../../styles/global.scss";
+
+import "../styles/welcome_page.scss";
+import "../styles/global.scss";
+
 import React, { useState } from "react";
 import Link from "next/link";
 import Navbar from "./navbar";

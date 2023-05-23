@@ -1,14 +1,17 @@
 "use client";
 
+
 import "../../styles/welcome_page.scss";
 import "../../styles/global.scss";
 
 import React, { useState } from "react";
 import Link from "next/link";
+
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 
 export default function Home() {
+
   const [nextText, setNextText] = useState(false);
 
   const handleClick = () => {
@@ -58,4 +61,5 @@ export default function Home() {
       <Footer />
     </>
   );
+
 }
