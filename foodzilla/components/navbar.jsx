@@ -2,11 +2,12 @@
 import React from "react";
 import navbar from "../styles/navbar.scss";
 
-function Navbar() {
+function Navbar({ logo, menu, logoAlt, menuAlt }) {
   return (
     <>
       <nav>
-        <img src="/hamburger-menu.svg" alt="hamburger menu" />
+        <img src={logo} alt={logoAlt} />
+        <img src={menu} alt={menuAlt} />
       </nav>
     </>
   );
