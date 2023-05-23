@@ -1,32 +1,42 @@
 "use client";
 import React from "react";
-import Logo from "../welcome_page.jsx";
+
 import Link from "next/link";
+import "../../../styles/login-page.scss";
+import Navbar from "../../../components/navbar";
 
-export default function GetStartedPage() {
+export default function LoginPage() {
   return (
-    <div>
-      <Logo logo="../foodzilla_logo.svg" logoAlt="../Foodzilla logo" />
+    <>
+      <Navbar />
+      <div className="logo">
+        <img src="../foodzilla_logo.svg" alt="../Foodzilla logo" />
+      </div>
+      <div className="login-container">
+        <form className="login">
+          <label>
+            <div>Username</div>
+            <input type="text" name="username" />
+          </label>
 
-      <h1>Get Started</h1>
+          <label>
+            <div>Password</div>
+            <input type="password" name="password" />
+          </label>
 
-      <form>
-        <label>
-          Username:
-          <input type="text" name="username" />
-        </label>
+          <img className="loginBtn" type="submit" src="login.svg" />
+        </form>
 
-        <label>
-          Password:
-          <input type="password" name="password" />
-        </label>
+        <div className="link-container">
+          <Link className="new-user" href="#">
+            New User
+          </Link>
+          <Link className="forgot-pswrd" href="#">
+            Forgot your password?
+          </Link>
+        </div>
+      </div>
+    </>
 
-        <button type="submit">Log In</button>
-      </form>
-
-      <Link href="#">New User</Link>
-      <br />
-      <Link href="#">Forgot your password?</Link>
-    </div>
   );
 }
