@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <div className="footer-container">
-        <h3>This is a footer</h3>
+        <h3></h3>
       </div>
     </>
   );
