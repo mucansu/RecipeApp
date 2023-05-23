@@ -42,7 +42,27 @@ public class UserController {
             return this.userService.createUser(user,roles);
         }
 
-        @GetMapping("/{username}")
+        // admin user
+        @PostMapping("/register-admin")
+        public User createAdminUser(@RequestBody User user) throws Exception {
+            // Encrypting the password
+            user.setPassword(this.bCryptPasswordEncoder.encode(user.getPassword()));
+
+            Set<UserRole> roles = new HashSet<>();
+            Role adminRole = new Role();
+            adminRole.setRoleId(46L);
+            adminRole.setRoleName("admin");
+
+            UserRole userRole = new UserRole();
+            userRole.setUser(user);
+            userRole.setRole(adminRole);
+            roles.add(userRole);
+
+            return this.userService.createUser(user, roles);
+        }
+
+
+            @GetMapping("/{username}")
         public User getUser(@PathVariable("username") String username){
             return this.userService.getUser(username);
         }
