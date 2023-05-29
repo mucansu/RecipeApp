@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.logo {
+.logo_new-user {
     width: 101px;
     height: 101px;
     margin-bottom: 20px;  
@@ -26,31 +26,39 @@ label {
     align-items: center;
     width: 100%;
     color: g.$txtColor-black;
+    font-size: 1.3rem;
+    margin-top: 5%;
 }
 
 input[type="text"], input[type="password"] {
     // input elements
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
     height: 25px;
-    border: 1px solid #ccc;
+    border: 1px solid g.$hbMenu-bgColor;
 }
 
 button {
     font-family: "Suez one";
-    font-size: large;
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: 2%;
     border-radius: 5px;
     border: none;
     background-color: g.$btnColor;
     color: white;
     cursor: pointer;
-    width: 40%;
-    margin-top: 60px;
+    max-width: 200px;
+    margin-top: 10%;
     align-self: center;
+    text-decoration: none;
+    margin: 2rem auto 0;
 }
 .center-button {
     display: flex;
     justify-content: center;
     width: 100%;
 }
+a {
+    text-decoration: none;
+}
+

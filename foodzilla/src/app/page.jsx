@@ -43,8 +43,8 @@ export default function Home() {
           <>
             <div className="welcome-text">
               <h3>
-                Create your personal recepie liberery. <br />
-                Share recepies with friends. <br />
+                Create your personal recipe library. <br />
+                Share recipes with friends. <br />
                 Save your favorites.
               </h3>
             </div>

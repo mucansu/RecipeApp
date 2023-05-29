@@ -20,7 +20,7 @@ export default function NewUserPage() {
 
   return (
     <div className="new-user-container">
-      <img className="logo" src="../foodzilla_logo.svg" alt="Foodzilla Logo" />
+      <img className="logo_new-user" src="../foodzilla_logo.svg" alt="Foodzilla Logo" />
       <form onSubmit={handleSubmit}>
         <label>
           Förnamn
