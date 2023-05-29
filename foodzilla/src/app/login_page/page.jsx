@@ -15,12 +15,12 @@ export default function LoginPage() {
       <div className="login-container">
         <form className="login">
           <label>
-            <div>Username</div>
+            <div>Användarnamn</div>
             <input type="text" name="username" />
           </label>
 
           <label>
-            <div>Password</div>
+            <div>Lösenord</div>
             <input type="password" name="password" />
           </label>
 
@@ -29,10 +29,10 @@ export default function LoginPage() {
 
         <div className="link-container">
           <Link className="new-user" href="../new-user">
-            New User
+            Ny användare
           </Link>
           <Link className="forgot-pswrd" href="#">
-            Forgot your password?
+            Glömt lösenord?
           </Link>
         </div>
       </div>
