@@ -1,0 +1,54 @@
+[
+  {
+    "httpRequest": {
+      "path": "/users/1"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": {
+        "firstname": "Patrik",
+        "lastname": "Jönsson",
+        "phone": "123456789"
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "path": "/users/2"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": {
+        "firstname": "Anna",
+        "lastname": "Olsson",
+        "phone": "123456789"
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "path": "/users/3"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": {
+        "firstname": "Nisse",
+        "lastname": "Persson",
+        "phone": "123456789"
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "path": "/users/4"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": {
+        "firstname": "Victoria",
+        "lastname": "Svensson",
+        "phone": "123456789"
+      }
+    }
+  }
+]

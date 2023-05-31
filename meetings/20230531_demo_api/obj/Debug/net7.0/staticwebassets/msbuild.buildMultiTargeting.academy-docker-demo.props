@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\academy-docker-demo.props" />
+</Project>

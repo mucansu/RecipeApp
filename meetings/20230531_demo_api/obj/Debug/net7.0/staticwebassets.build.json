@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KaVZDdZL4gAHS1ggJ27iegW0QDLlah6xazWcQb9u6wM=",
+  "Source": "academy-docker-demo",
+  "BasePath": "_content/academy-docker-demo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
