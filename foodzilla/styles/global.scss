@@ -12,7 +12,8 @@ $txtColor-white: #f0f2f2;
 
 body {
   max-width: 450px;
-  max-height: 1000px;
+  max-height: none;
   background-color: $bgColor;
   font-family: "Suez one";
+  overflow: auto;
 }
