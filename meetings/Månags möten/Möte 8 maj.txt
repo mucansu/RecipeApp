@@ -1,0 +1,55 @@
+Scrummaster: Samuel Hielscher
+
+Java team har gjort: 
+Fixat roller - adminroll
+JWT
+Krypterat lösenors 
+Man måste ha ett jwt token för att komma in. 
+Token med giltighetstid.
+
+
+Patrik tipsar om postman 
+Klicka på fliken authorasation 
+berertoken
+
+
+
+Väldigt användbart skapa token med javaskript. 
+
+C# Jean, Martin, Haris. 
+Lite vilsna. Sträckte ut sig till Patrik. 
+Kluvna på vad vi ska göra.
+Bokar möte med Patrik 
+Möte inbokat under tisdagen
+
+Fråga.
+Vem kallar vi på och vilket språk ska de prata med. Börja med den anonyma modellen. Börja med att hämta recept som e publika. 
+
+Rana har kollat på authotiserings token. Proxy reverse. 
+
+Tanke omatt använda gmail för inloggning.  I nästa sprint
+
+Flika in.C# 
+fråga om vem som är inloggad. 
+Processkarta. 
+Många anrop i c# kommer göra anrop till Java. Vems recept andvänds. 
+
+Mustafa.
+Problem med microservices och vissa konfigurationsfiler på github. 
+Det blev något fel. 
+
+Bilal, just nu ligger alla filer på hans dator. 
+Skapa en ny katalog, 
+Gör en gitclone 
+När vi e synkade kopiera java koden för hand. 
+Sen skapa en ny branch 
+Och sen en kommit och puch.
+
+En fork- en kopia som inte ha en kontakt. 
+
+En feature branch är bra om du vill teta något med någon 
+
+Bilal - båda jobbar på en klone.  
+
+Design.
+Gör skapa recept transparant. 

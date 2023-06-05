@@ -1,0 +1,40 @@
+Java Databas. 
+	Miriam - lokal Databas koppla meD Docker
+	Nästa Steg Pushat 2 Databaser. 
+Instruktionen var ganska tyDlig hur man sätter upp en Databas till Docker. 
+Alla språk ska koppla upp et på samma sätt. 
+Microservic koppling meD yamal fil för att koppla ihop.  
+	Docker, kör bara när Du behöver Den - kom ikapp hur Docker funkar. 
+	Docker fil och Dll
+		Docker har samma komanDon uppe i målnet.
+I Asure vill vi kolla mer på säkerhet.  
+	
+C# Team 
+	 Inte så mycket nytt. 
+	Hur hämtar vi använare, vi ska använa token från java för att skickaa en anväDare
+	
+FrontenD team
+	Routing problem - en siDa som inte vill synas. 
+	React sitter Dem meD
+	AlexanDer, sitter me skapa använDare. Sitter meD enpoints och behöver hjälp från Java teamet och behöver sitta meD user siDan. 
+De har skapat en ny branch 
+	
+Design team
+	Koppla in Salesforce för hjälp funktioner. 
+	
+Demo
+	Tekniker bakom huven
+	Visa flöDe i figma. 
+Asure, får vi upp våra applikationer kan vi titta på Det. 
+	Rana kommer in, OnsDag och freDag 
+TiD på månDag. 
+	
+Packetera java och packetera på Docker och laDDa ner container. Pusha på Docker hub
+koDkallar repositories. 
+	
+	
+Efter möte 
+	Hur hittar man vänner? 
+AnvänDare skapar sin egen profil
+	AnvänDre behöver kunna aDDa och ta bort vänner från sin profil.  
+	KontaktsiDa. 

@@ -1,0 +1,44 @@
+Tränk mer i scrum banor.
+Introduction to Scrum - 7 Minutes
+
+
+
+
+Team avstämmning: 
+
+C# teamet: Jean 
+
+Problemet är att skriva APIER
+Maria DB - är också ett nytt verktyg
+Ska träffas 13-16 
+
+Problem: Koppla maria db till deras cod.
+
+Java Team:  Billal 
+Klara med inloggningen. 
+Docker: Lyckats att skapa en docker image av databasen.
+Hur kan man koppla det det till docker hub. 
+Det kommer bli enklare att kolla på asure. 1 eller 2 sittningar. 
+Microservices är klara med microservices. 
+
+Patrik kommer att lägga upp vet och etikett i assure. 
+Nivån ska inte vara för lätt eller svår. 
+Patrik bjuder in hela teamet. 
+
+Frontend: 
+Josef:
+Rautingen är löst. Det var en fil som låg fel 
+De löste massa merch konflikter. 
+Nu är planen att sitta med java teamet. 
+Bygga ihop med java teamet. 
+Alexander: Behöver mer hjälp med att köra containers. 
+Lite osäker på hur han ska skapa endpoits. 
+Inloggningsidorna är i fokus. 
+
+Ibrahim? Var e han? 
+Inga nya planerade att komma in i temet. 
+
+Sen när vi har grejer klara 
+Mitten av Juli början av augusti. 
+
+Mål, Att om två veckor. 

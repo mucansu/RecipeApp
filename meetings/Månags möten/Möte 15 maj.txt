@@ -1,0 +1,32 @@
+Java teamet. 
+
+Små tekniska utmaningar. 
+Fixat github - bilal me hjälp a github. 
+Logga in meD google e på g. 
+Vi behöver skapa en pullrecuest på github - Bilal har gjort Det. 
+
+Jean- hur ser atabasen ut just nu. 
+Kan e konekta till databasen. 
+
+Mariam leer processen att flytta databasen till målnet. 
+Tabellerna skapas baserat på koden. 
+
+Va e det för data som e behöver i c# teamet. 
+Jean, tog med data som skulle likna icas receptdata. 
+Recept först och profiler sen. 
+
+Vi kommer bli beroende av Mariam att sätta upp en databas med docker. 
+2 databaser men inte på samma server. 
+
+Design funera på hur använDarData och recept kan kommlas. 
+AnvänDar iD på recept till exempelt? 
+
+Springsecurety - sätter upp alting Direkt. Man får På köpet. 
+Use authentication. 
+
+C# möte. 
+Jean- De har satt upp en modell men med tanken om att hämta dATA Från Java teamet. 
+
+För snygga modeller. 
+Gör modellerna fulare. Figma är för snyggt för säljteamet.
+Få upp allt i github  

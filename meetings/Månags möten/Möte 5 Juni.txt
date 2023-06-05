@@ -1,0 +1,43 @@
+Det har ryktats om att det kommer in nya. 
+Idag vet vi inte. 
+
+Status på teamet, vilka är kvar?
+
+Java 
+David
+
+C#
+Jean 
+Haris
+
+Javascrip 
+Josef 
+Ibrahim? Har han lämnat?  
+
+Design 
+Rana 
+Samuel
+
+Status på projekt i teamen: 
+
+C# 
+Klara med 
+Api - 
+Modellen är bygg efter googles schema. 
+Hur man kopplar in en bild till modellen. Detta är veckans utmaning. 
+
+Beslut, Java och c# ska synka ihop
+Patrik kollar om vi kan få en överlämning av de som har gått. 
+
+Frontend 
+Tanken var att synka ihop. 
+Fortsätta vidare med att skapa e andra sidorna.
+Fokus på att få till receptinmatning. 
+
+Ny projektledare. 
+
+Tips om freelancing från Patrik nästa vecka. 
+5 h workweek Bok tips. 
+
+Rana
+Kommer in på onsdag och fredag.  
