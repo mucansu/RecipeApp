@@ -27,6 +27,6 @@ You can now create tables, insert data, and perform other operations on the data
 ### TO RUN DATABASE IN DOCKER (Skip steps above)
 Write code below to run database in a container in docker
 
-docker run -d -p 3307:3306 --network skynet --env MARIADB_ROOT_PASSWORD=password1234 
+>docker run -d -p 3307:3306 --network skynet --env MARIADB_ROOT_PASSWORD=password1234 
 --env MARIADB_DATABASE=academyrecepie --env MARIADB_USER=foodzilla 
 --env MARIADB_PASSWORD=foodzilla --name myMaria mariadb:latest

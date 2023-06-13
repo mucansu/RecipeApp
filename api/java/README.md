@@ -17,7 +17,7 @@ Open up a terminal and make sure you are in the folder the dockerfile is located
 
 Then follow the instructions below.
 
-Build your container:  
+Build your image:  
 >docker build . -t api-java
 
 Run your container (as a service):  
