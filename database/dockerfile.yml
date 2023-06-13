@@ -6,8 +6,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: mydb1
-      MYSQL_USER: foodzila
-      MYSQL_PASSWORD: foodzila
+      MYSQL_USER: foodzilla
+      MYSQL_PASSWORD: foodzilla
     volumes:
       - mydb1_data:/var/lib/mysql
 

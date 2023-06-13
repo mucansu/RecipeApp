@@ -1,4 +1,5 @@
 package com.recipe.api.Config;
+
 import com.recipe.api.service.impl.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -30,30 +31,25 @@ public class MySecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-    http
-            .csrf().disable()
-            .cors().disable()
-            .authorizeHttpRequests()
-            .requestMatchers("/login-user","/user/register","/user/register-admin").permitAll()
-            .requestMatchers(HttpMethod.OPTIONS).permitAll()
-            .anyRequest().authenticated()
-            .and()
-            .exceptionHandling().authenticationEntryPoint(unauthorizedHandler)
-            .and()
-            .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-    http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
-    http.authenticationProvider(daoAuthenticationProvider());
-    DefaultSecurityFilterChain defaultSecurityFilterChain = http.build();
-    return defaultSecurityFilterChain;
-
-
-
-
-}
-
+        http
+                .csrf().disable()
+                .cors().disable()
+                .authorizeHttpRequests()
+                .requestMatchers("/login-user", "/user/register", "/user/register-admin").permitAll()
+                .requestMatchers(HttpMethod.OPTIONS).permitAll()
+                .anyRequest().authenticated()
+                .and()
+                .exceptionHandling().authenticationEntryPoint(unauthorizedHandler)
+                .and()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+        http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+        http.authenticationProvider(daoAuthenticationProvider());
+        DefaultSecurityFilterChain defaultSecurityFilterChain = http.build();
+        return defaultSecurityFilterChain;
+    }
 
     @Bean
-    public BCryptPasswordEncoder passwordEncoder(){
+    public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
@@ -62,12 +58,12 @@ public class MySecurityConfig {
         return configuration.getAuthenticationManager();
     }
 
-@Bean
-    public DaoAuthenticationProvider daoAuthenticationProvider(){
-    DaoAuthenticationProvider provider= new DaoAuthenticationProvider();
-    provider.setUserDetailsService(this.userDetailsServiceImpl);
-    provider.setPasswordEncoder(passwordEncoder());
-    return provider;
-}
+    @Bean
+    public DaoAuthenticationProvider daoAuthenticationProvider() {
+        DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
+        provider.setUserDetailsService(this.userDetailsServiceImpl);
+        provider.setPasswordEncoder(passwordEncoder());
+        return provider;
+    }
 
 }
