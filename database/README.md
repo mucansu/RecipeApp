@@ -22,3 +22,11 @@ you can access the database in the container with the help of the command: mysql
 Replace host IP with the IP address/ hostname of the machine running the container and your_username with the username you specified in the docker-compose.yml file
 
 You can now create tables, insert data, and perform other operations on the database just as you would with a local database.
+
+
+### TO RUN DATABASE IN DOCKER (Skip steps above)
+Write code below to run database in a container in docker
+
+>docker run -d -p 3307:3306 --network skynet --env MARIADB_ROOT_PASSWORD=password1234 
+--env MARIADB_DATABASE=academyrecepie --env MARIADB_USER=foodzilla 
+--env MARIADB_PASSWORD=foodzilla --name myMaria mariadb:latest

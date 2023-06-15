@@ -32,35 +32,35 @@ public class AuthenticateController {
     @PostMapping("/login-user")
     public ResponseEntity<?> generateToken(@RequestBody JwtRequest jwtRequest) throws Exception {
         try {
-            authenticate(jwtRequest.getUsername(),jwtRequest.getPassword());
-
-        }catch (UsernameNotFoundException e){
+            authenticate(jwtRequest.getUsername(), jwtRequest.getPassword());
+        } catch (UsernameNotFoundException e) {
             e.printStackTrace();
             throw new Exception("User not found");
-
         }
         // load user
-        UserDetails userDetails= this.userDetailsService.loadUserByUsername(jwtRequest.getUsername());
-        String token= this.jwtUtils.generateToken(userDetails);
-
+        UserDetails userDetails = this.userDetailsService.loadUserByUsername(jwtRequest.getUsername());
+        String token = this.jwtUtils.generateToken(userDetails);
         return ResponseEntity.ok(new JwtResponse(token));
-
     }
-
 
     private void authenticate(String username, String password) throws Exception {
         try {
-            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username,password));
-
-        }catch (DisabledException e){
-            throw  new Exception("user disabled"+e.getMessage());
-        }catch (BadCredentialsException e){
-            throw new Exception("Invalid credentials" +e.getMessage());
+            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
+        } catch (DisabledException e) {
+            throw new Exception("user disabled" + e.getMessage());
+        } catch (BadCredentialsException e) {
+            throw new Exception("Invalid credentials" + e.getMessage());
         }
     }
 
     @GetMapping("/current-user")
-    public User getCurrentUser(Principal principal){
+    public User getCurrentUser(Principal principal) {
         return ((User) this.userDetailsService.loadUserByUsername(principal.getName()));
+    }
+
+    //Get user from token
+    @GetMapping("/current-user/{token}")
+    public User getCurrentUserByToken(@PathVariable("token") String token) {
+        return ((User) this.userDetailsService.loadUserByUsername(jwtUtils.extractUsername(token)));
     }
 }

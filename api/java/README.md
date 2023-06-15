@@ -3,20 +3,27 @@
 
 ### Docker 
 
-To run your api in a Docker container, open up a terminal and make sure you are where the Dockerfile is located.
+### !!!! For the API to run you need the database to be running in docker !!!!
+###   ** See instructions in the bottom of the readme file located in the database folder **
 
-Build your container:  
->docker build . -t pattzor/api-java .  
+To run your api in a Docker container:
 
-Run your container (in terminal):  
->docker run -p 8080:8080 api-java:latest  
+First to generate a .jar file of the API, go to the "Maven" tab on the right
+side of the screen in intelliJ, in the "api" folder open the "Lifecycle" folder
+and double-click the "install" command.
 
-Note that your running container will get a random name.
+Open up a terminal and make sure you are in the folder the dockerfile is located
+(/api/java)
+
+Then follow the instructions below.
+
+Build your image:  
+>docker build . -t api-java
 
 Run your container (as a service):  
->docker run -d -p 8080:8080 --name myJavaApi api-java:latest  
+>docker run -d -p 8080:8080 --network skynet --name javaapi api-java:latest  
 
-This will run the container in the background with the name myJavaApi.  
+This will run the container in the background with the name javaapi.  
 You can start/stop your container from Docker desktop.
 
 You can test your API using Postman on port 8080 on localhost:
