@@ -1,7 +1,13 @@
-# RecipeApp
+# Welcome!
 
-Recipe application that allows users to interact with each other, add new recipes and make favorite list
+This is the main repository for the Academy-Next-x projects!
 
-This app is inspired from https://www.ica.se/recept/
+Let's keep it simple (KISS) and just create a folder for each project.
 
- I want to make it interactable among users, so that they can follow someone else, see their recipes and add them to favorite list. This app is still in progress, it will take a few month to make it come online
+This might end up being a huge repository, but let's face that problem in due time.
+
+Since this is a private and free repository, I can't protect the main branch.
+
+But please, use a pull request and have someone review your code before you merge.
+
+**NOTE:** this README.md should be updated. Anyone up for the task?
