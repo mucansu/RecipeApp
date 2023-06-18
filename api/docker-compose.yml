@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  api-proxy:
+    container_name: api-proxy
+    image: pattzor/api-proxy
+    build: ./proxy
+    ports:
+      - "8080:80"
+    depends_on:   # the api-proxy will fail if one service is down
+      - api-net
+      - api-java
+      - api-node
+  api-net:
+    container_name: api-net
+    image: pattzor/api-net
+    build: 
+      context: ./dotnet/api
+      dockerfile: Dockerfile2
+  api-java:
+    container_name: api-java
+    image: pattzor/api-java
+    build: ./java
+  api-node:
+    container_name: api-node
+    image: pattzor/api-node
+    build: ./nodejs

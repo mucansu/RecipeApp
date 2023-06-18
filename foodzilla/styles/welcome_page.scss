@@ -1,0 +1,19 @@
+@use "global.scss" as g;
+
+.welcome {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .welcome-text {
+    text-align: center;
+    line-height: 2.5rem;
+  }
+  .forward {
+    margin-top: 1rem;
+  }
+  .get-started {
+    margin-top: 5rem;
+  }
+}
